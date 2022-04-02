@@ -7,8 +7,12 @@ class Coin:
             raise ValueError('Niepoprawny wybór')
         self.side = self.SIDE[side]
     
-def throw(self):
-    random.choice(self.side)
+    def throw(self):
+        self.side = random.choice(list(self.SIDE.values()))
 
     def __repr__(self) -> str:
         return f'{self.side}'
+
+coin = Coin("o")
+coin.throw()
+print(coin)

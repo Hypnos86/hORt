@@ -4,3 +4,5 @@ class Player:
         self.point = point
 
 
+kamil = Player('kamil',10)
+print(kamil.point)
